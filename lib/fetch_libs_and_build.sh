@@ -6,7 +6,7 @@
 [ ! -f src/main/resources/win32-x86-64/libdwarf.dll ] && \
     curl -o src/main/resources/win32-x86-64/libdwarf.dll -L --create-dirs https://github.com/pathtofile/libdwarf-ghidra2dwarf/releases/download/latest/libdwarf.dll
 
-[ ! -f src/main/resources/darwin/libdwarf.dylib ] && \
-    curl -o src/main/resources/darwin/libdwarf.dylib -L --create-dirs https://github.com/pathtofile/libdwarf-ghidra2dwarf/releases/download/latest/libdwarf.dylib
+[ ! -f src/main/resources/darwin-aarch64/libdwarf.dylib ] && \
+    curl -o src/main/resources/darwin-aarch64/libdwarf.dylib -L --create-dirs https://github.com/pathtofile/libdwarf-ghidra2dwarf/releases/download/latest/libdwarf.dylib
 
 mvn package
