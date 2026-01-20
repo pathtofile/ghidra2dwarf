@@ -34,7 +34,7 @@ public interface LibdwarfLibrary extends Library {
 	LibdwarfLibrary.Dwarf_P_Die dwarf_new_die(LibdwarfLibrary.Dwarf_P_Debug Dwarf_P_Debug1, long Dwarf_Tag1, LibdwarfLibrary.Dwarf_P_Die Dwarf_P_Die1, LibdwarfLibrary.Dwarf_P_Die Dwarf_P_Die2, LibdwarfLibrary.Dwarf_P_Die Dwarf_P_Die3, LibdwarfLibrary.Dwarf_P_Die Dwarf_P_Die4, PointerByReference Dwarf_ErrorPtr1);
 	int dwarf_add_die_to_debug_a(LibdwarfLibrary.Dwarf_P_Debug Dwarf_P_Debug1, LibdwarfLibrary.Dwarf_P_Die Dwarf_P_Die1, PointerByReference Dwarf_ErrorPtr1);
 	LibdwarfLibrary.Dwarf_P_Expr dwarf_new_expr(LibdwarfLibrary.Dwarf_P_Debug Dwarf_P_Debug1, PointerByReference Dwarf_ErrorPtr1);
-	long dwarf_add_expr_gen(LibdwarfLibrary.Dwarf_P_Expr Dwarf_P_Expr1, byte Dwarf_Small1, long Dwarf_Unsigned1, long Dwarf_Unsigned2, PointerByReference Dwarf_ErrorPtr1);
+	long dwarf_add_expr_gen(LibdwarfLibrary.Dwarf_P_Expr Dwarf_P_Expr1, short Dwarf_Small1, long Dwarf_Unsigned1, long Dwarf_Unsigned2, PointerByReference Dwarf_ErrorPtr1);
 	long dwarf_add_expr_addr_b(LibdwarfLibrary.Dwarf_P_Expr Dwarf_P_Expr1, long Dwarf_Unsigned1, long Dwarf_Unsigned2, PointerByReference Dwarf_ErrorPtr1);
 	
 	// callbacks
