@@ -15,10 +15,10 @@ jobs:
         uses: EndBug/latest-tag@latest
 
       - name: Set up JDK
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v4
         with:
-          java-version: 21
-          architecture: x64
+          java-version: '21'
+          distribution: 'temurin'
 
       - name: Build jar
         run: |
